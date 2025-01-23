@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.n2nlab.camel.python"},{"l":"com.n2nlab.camel.python.exception"},{"l":"com.n2nlab.camel.python.model"}];updateSearchResults();

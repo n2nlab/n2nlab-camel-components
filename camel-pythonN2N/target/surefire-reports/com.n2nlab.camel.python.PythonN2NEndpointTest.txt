@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.n2nlab.camel.python.PythonN2NEndpointTest
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s -- in com.n2nlab.camel.python.PythonN2NEndpointTest

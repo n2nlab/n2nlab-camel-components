@@ -1,0 +1,61 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+logs/
+
+# IDE - IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# IDE - Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+bin/
+
+# IDE - VS Code
+.vscode/
+.history/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Test coverage
+*.exec
+.surefire-*
+
+# Other
+*.swp
+*~
+.factorypath
