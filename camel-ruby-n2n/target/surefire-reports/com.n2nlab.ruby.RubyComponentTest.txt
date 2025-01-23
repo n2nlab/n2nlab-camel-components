@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.n2nlab.ruby.RubyComponentTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.696 s -- in com.n2nlab.ruby.RubyComponentTest

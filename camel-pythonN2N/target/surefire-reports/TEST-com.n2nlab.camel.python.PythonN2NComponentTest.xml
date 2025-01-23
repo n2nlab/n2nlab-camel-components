@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.n2nlab.camel.python.PythonN2NComponentTest" time="9.454" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\mahmoudxyz\Desktop\n2n-camel-components\camel-pythonN2N\target\test-classes;C:\Users\mahmoudxyz\Desktop\n2n-camel-components\camel-pythonN2N\target\classes;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-support\4.8.0\camel-support-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-api\4.8.0\camel-api-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\mahmoudxyz\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-management-api\4.8.0\camel-management-api-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-util\4.8.0\camel-util-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-util-json\4.8.0\camel-util-json-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xml-jaxp-util\4.8.0\camel-xml-jaxp-util-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core\4.8.0\camel-core-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core-engine\4.8.0\camel-core-engine-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-base-engine\4.8.0\camel-base-engine-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-base\4.8.0\camel-base-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core-reifier\4.8.0\camel-core-reifier-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core-processor\4.8.0\camel-core-processor-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core-languages\4.8.0\camel-core-languages-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core-model\4.8.0\camel-core-model-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-bean\4.8.0\camel-bean-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-browse\4.8.0\camel-browse-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-cluster\4.8.0\camel-cluster-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-controlbus\4.8.0\camel-controlbus-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-dataformat\4.8.0\camel-dataformat-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-dataset\4.8.0\camel-dataset-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-direct\4.8.0\camel-direct-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-file\4.8.0\camel-file-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-health\4.8.0\camel-health-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-language\4.8.0\camel-language-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-log\4.8.0\camel-log-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-mock\4.8.0\camel-mock-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-ref\4.8.0\camel-ref-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-rest\4.8.0\camel-rest-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-tooling-model\4.8.0\camel-tooling-model-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-saga\4.8.0\camel-saga-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-scheduler\4.8.0\camel-scheduler-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-seda\4.8.0\camel-seda-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-stub\4.8.0\camel-stub-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-timer\4.8.0\camel-timer-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-validator\4.8.0\camel-validator-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xpath\4.8.0\camel-xpath-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xslt\4.8.0\camel-xslt-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xml-io\4.8.0\camel-xml-io-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xml-io-util\4.8.0\camel-xml-io-util-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xml-jaxb\4.8.0\camel-xml-jaxb-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\mahmoudxyz\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\mahmoudxyz\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\mahmoudxyz\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\mahmoudxyz\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xml-jaxp\4.8.0\camel-xml-jaxp-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-yaml-io\4.8.0\camel-yaml-io-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core-catalog\4.8.0\camel-core-catalog-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.2\jackson-dataformat-yaml-2.17.2.jar;C:\Users\mahmoudxyz\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\mahmoudxyz\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\mahmoudxyz\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\mahmoudxyz\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\mahmoudxyz\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\mahmoudxyz\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mahmoudxyz\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\mockito\mockito-core\5.6.0\mockito-core-5.6.0.jar;C:\Users\mahmoudxyz\.m2\repository\net\bytebuddy\byte-buddy\1.14.8\byte-buddy-1.14.8.jar;C:\Users\mahmoudxyz\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.8\byte-buddy-agent-1.14.8.jar;C:\Users\mahmoudxyz\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\mahmoudxyz\.m2\repository\org\mockito\mockito-junit-jupiter\5.6.0\mockito-junit-jupiter-5.6.0.jar;C:\Users\mahmoudxyz\.m2\repository\ch\qos\logback\logback-classic\1.5.8\logback-classic-1.5.8.jar;C:\Users\mahmoudxyz\.m2\repository\ch\qos\logback\logback-core\1.5.8\logback-core-1.5.8.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-test-junit5\4.8.0\camel-test-junit5-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\mahmoudxyz\AppData\Local\Temp\surefire15799378305776145993\surefirebooter-20250123054752863_3.jar C:\Users\mahmoudxyz\AppData\Local\Temp\surefire15799378305776145993 2025-01-23T05-47-52_706-jvmRun1 surefire-20250123054752863_1tmp surefire_0-20250123054752863_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\mahmoudxyz\Desktop\n2n-camel-components\camel-pythonN2N\target\test-classes;C:\Users\mahmoudxyz\Desktop\n2n-camel-components\camel-pythonN2N\target\classes;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-support\4.8.0\camel-support-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-api\4.8.0\camel-api-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\mahmoudxyz\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-management-api\4.8.0\camel-management-api-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-util\4.8.0\camel-util-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-util-json\4.8.0\camel-util-json-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xml-jaxp-util\4.8.0\camel-xml-jaxp-util-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core\4.8.0\camel-core-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core-engine\4.8.0\camel-core-engine-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-base-engine\4.8.0\camel-base-engine-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-base\4.8.0\camel-base-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core-reifier\4.8.0\camel-core-reifier-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core-processor\4.8.0\camel-core-processor-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core-languages\4.8.0\camel-core-languages-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core-model\4.8.0\camel-core-model-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-bean\4.8.0\camel-bean-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-browse\4.8.0\camel-browse-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-cluster\4.8.0\camel-cluster-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-controlbus\4.8.0\camel-controlbus-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-dataformat\4.8.0\camel-dataformat-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-dataset\4.8.0\camel-dataset-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-direct\4.8.0\camel-direct-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-file\4.8.0\camel-file-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-health\4.8.0\camel-health-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-language\4.8.0\camel-language-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-log\4.8.0\camel-log-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-mock\4.8.0\camel-mock-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-ref\4.8.0\camel-ref-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-rest\4.8.0\camel-rest-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-tooling-model\4.8.0\camel-tooling-model-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-saga\4.8.0\camel-saga-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-scheduler\4.8.0\camel-scheduler-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-seda\4.8.0\camel-seda-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-stub\4.8.0\camel-stub-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-timer\4.8.0\camel-timer-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-validator\4.8.0\camel-validator-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xpath\4.8.0\camel-xpath-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xslt\4.8.0\camel-xslt-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xml-io\4.8.0\camel-xml-io-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xml-io-util\4.8.0\camel-xml-io-util-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xml-jaxb\4.8.0\camel-xml-jaxb-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\mahmoudxyz\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\mahmoudxyz\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\mahmoudxyz\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\mahmoudxyz\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-xml-jaxp\4.8.0\camel-xml-jaxp-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-yaml-io\4.8.0\camel-yaml-io-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-core-catalog\4.8.0\camel-core-catalog-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.2\jackson-dataformat-yaml-2.17.2.jar;C:\Users\mahmoudxyz\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\mahmoudxyz\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\mahmoudxyz\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\mahmoudxyz\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\mahmoudxyz\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\mahmoudxyz\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mahmoudxyz\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\mockito\mockito-core\5.6.0\mockito-core-5.6.0.jar;C:\Users\mahmoudxyz\.m2\repository\net\bytebuddy\byte-buddy\1.14.8\byte-buddy-1.14.8.jar;C:\Users\mahmoudxyz\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.8\byte-buddy-agent-1.14.8.jar;C:\Users\mahmoudxyz\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\mahmoudxyz\.m2\repository\org\mockito\mockito-junit-jupiter\5.6.0\mockito-junit-jupiter-5.6.0.jar;C:\Users\mahmoudxyz\.m2\repository\ch\qos\logback\logback-classic\1.5.8\logback-classic-1.5.8.jar;C:\Users\mahmoudxyz\.m2\repository\ch\qos\logback\logback-core\1.5.8\logback-core-1.5.8.jar;C:\Users\mahmoudxyz\.m2\repository\org\apache\camel\camel-test-junit5\4.8.0\camel-test-junit5-4.8.0.jar;C:\Users\mahmoudxyz\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mahmoudxyz"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\mahmoudxyz\Desktop\n2n-camel-components\camel-pythonN2N"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\mahmoudxyz\AppData\Local\Temp\surefire15799378305776145993\surefirebooter-20250123054752863_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.1+8-16"/>
+    <property name="user.name" value="mahmoudxyz"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\mahmoudxyz\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\MAHMOU~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="C:\Users\mahmoudxyz\Desktop\n2n-camel-components\camel-pythonN2N"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\mahmoudxyz\Documents\apache-maven-3.9.8\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\ibm\gsk8\lib64;C:\Program Files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB~1\BIN;C:\PROGRA~1\IBM\SQLLIB~1\FUNCTION;C:\PROGRA~1\IBM\SQLLIB~1\SAMPLES\REPL;C:\minikube;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files\PowerShell\7\;C:\Users\mahmoudxyz\AppData\Local\pnpm;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\mahmoudxyz\AppData\Local\Microsoft\WindowsApps;C:\Users\mahmoudxyz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mahmoudxyz\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\mahmoudxyz\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.3\bin;C:\Users\mahmoudxyz\AppData\Local\Coursier\data\bin;C:\Users\mahmoudxyz\.nixpacks\bin;C:\Users\mahmoudxyz\Documents\pack-v0.35.0-windows;C:\Program Files\PostgreSQL\16\bin;C:\Program Files\PostgreSQL\16\lib;C:\Users\mahmoudxyz\Documents\apache-maven-3.9.8\bin;C:\Program Files\kubectl;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.1+8-16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="testStringManipulation" classname="com.n2nlab.camel.python.PythonN2NComponentTest" time="1.921">
+    <system-out><![CDATA[05:47:57.046 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-3) is starting
+05:47:57.862 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (total:4)
+05:47:57.863 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route9 (direct://pythonTest)
+05:47:57.863 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route10 (direct://pythonString)
+05:47:57.863 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route11 (direct://pythonList)
+05:47:57.863 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route12 (direct://pythonTimeout)
+05:47:57.863 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-3) started in 816ms (build:0ms init:0ms start:816ms)
+05:47:57.877 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-4) is starting
+05:47:58.706 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (total:4)
+05:47:58.708 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route13 (direct://pythonTest)
+05:47:58.708 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route14 (direct://pythonString)
+05:47:58.708 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route15 (direct://pythonList)
+05:47:58.708 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route16 (direct://pythonTimeout)
+05:47:58.708 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-4) started in 830ms (build:0ms init:0ms start:830ms)
+05:47:58.708 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+05:47:58.708 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - Testing: Should handle Python script with string manipulation (com.n2nlab.camel.python.PythonN2NComponentTest)
+05:47:58.708 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+05:47:58.876 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-4) is shutting down (timeout:10s)
+05:47:58.879 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (total:4)
+05:47:58.879 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route16 (direct://pythonTimeout)
+05:47:58.879 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route15 (direct://pythonList)
+05:47:58.879 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route14 (direct://pythonString)
+05:47:58.879 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route13 (direct://pythonTest)
+05:47:58.879 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-4) shutdown in 2ms (uptime:1s)
+05:47:58.879 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+05:47:58.879 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - Testing done: testStringManipulation (com.n2nlab.camel.python.PythonN2NComponentTest)
+05:47:58.879 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - Took: 171ms (171 millis)
+05:47:58.879 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+]]></system-out>
+  </testcase>
+  <testcase name="testSimplePythonScript" classname="com.n2nlab.camel.python.PythonN2NComponentTest" time="1.855">
+    <system-out><![CDATA[05:47:58.899 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-5) is starting
+05:47:59.729 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (total:4)
+05:47:59.729 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route17 (direct://pythonTest)
+05:47:59.729 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route18 (direct://pythonString)
+05:47:59.729 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route19 (direct://pythonList)
+05:47:59.729 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route20 (direct://pythonTimeout)
+05:47:59.729 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-5) started in 830ms (build:0ms init:0ms start:830ms)
+05:47:59.743 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-6) is starting
+05:48:00.582 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (total:4)
+05:48:00.582 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route21 (direct://pythonTest)
+05:48:00.582 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route22 (direct://pythonString)
+05:48:00.582 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route23 (direct://pythonList)
+05:48:00.582 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route24 (direct://pythonTimeout)
+05:48:00.582 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-6) started in 839ms (build:0ms init:0ms start:839ms)
+05:48:00.582 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+05:48:00.582 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - Testing: Should execute simple Python script successfully (com.n2nlab.camel.python.PythonN2NComponentTest)
+05:48:00.582 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+05:48:00.736 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-6) is shutting down (timeout:10s)
+05:48:00.738 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (total:4)
+05:48:00.739 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route24 (direct://pythonTimeout)
+05:48:00.739 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route23 (direct://pythonList)
+05:48:00.739 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route22 (direct://pythonString)
+05:48:00.739 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route21 (direct://pythonTest)
+05:48:00.739 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-6) shutdown in 2ms (uptime:0s)
+05:48:00.739 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+05:48:00.739 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - Testing done: testSimplePythonScript (com.n2nlab.camel.python.PythonN2NComponentTest)
+05:48:00.739 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - Took: 157ms (157 millis)
+05:48:00.739 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+]]></system-out>
+  </testcase>
+  <testcase name="testScriptTimeout" classname="com.n2nlab.camel.python.PythonN2NComponentTest" time="3.841">
+    <system-out><![CDATA[05:48:00.756 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-7) is starting
+05:48:01.590 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (total:4)
+05:48:01.590 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route25 (direct://pythonTest)
+05:48:01.590 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route26 (direct://pythonString)
+05:48:01.590 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route27 (direct://pythonList)
+05:48:01.590 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route28 (direct://pythonTimeout)
+05:48:01.590 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-7) started in 832ms (build:0ms init:0ms start:832ms)
+05:48:01.602 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-8) is starting
+05:48:02.430 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (total:4)
+05:48:02.430 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route29 (direct://pythonTest)
+05:48:02.430 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route30 (direct://pythonString)
+05:48:02.430 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route31 (direct://pythonList)
+05:48:02.430 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route32 (direct://pythonTimeout)
+05:48:02.430 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-8) started in 828ms (build:0ms init:0ms start:828ms)
+05:48:02.430 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+05:48:02.430 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - Testing: Should handle script timeout (com.n2nlab.camel.python.PythonN2NComponentTest)
+05:48:02.430 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+05:48:03.451 [main] ERROR o.a.c.p.e.DefaultErrorHandler - Failed delivery for (MessageId: E1DDA8086DF2926-0000000000000000 on ExchangeId: E1DDA8086DF2926-0000000000000000). Exhausted after delivery attempt: 1 caught: java.lang.RuntimeException: Python script execution timed out after 1000 ms
+
+Message History (source location and message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+Source                                   ID                             Processor                                          Elapsed (ms)
+                                         route32/route32                from[direct://pythonTimeout]                               1017
+	...
+                                         route32/to32                   pythonN2N:test?pythonScript=import+time%0Atime.sle            0
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+java.lang.RuntimeException: Python script execution timed out after 1000 ms
+	at com.n2nlab.camel.python.PythonN2NProducer.executeScript(PythonN2NProducer.java:190)
+	at com.n2nlab.camel.python.PythonN2NProducer.process(PythonN2NProducer.java:140)
+	at org.apache.camel.support.AsyncProcessorConverterHelper$ProcessorToAsyncProcessorBridge.process(AsyncProcessorConverterHelper.java:65)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:208)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.handleFirst(RedeliveryErrorHandler.java:440)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:416)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.doRun(DefaultReactiveExecutor.java:199)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.executeReactiveWork(DefaultReactiveExecutor.java:189)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.tryExecuteReactiveWork(DefaultReactiveExecutor.java:166)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:59)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:163)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.processNonTransacted(CamelInternalProcessor.java:347)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:323)
+	at org.apache.camel.component.direct.DirectProducer.process(DirectProducer.java:96)
+	at org.apache.camel.impl.engine.SharedCamelInternalProcessor.processNonTransacted(SharedCamelInternalProcessor.java:156)
+	at org.apache.camel.impl.engine.SharedCamelInternalProcessor.process(SharedCamelInternalProcessor.java:133)
+	at org.apache.camel.impl.engine.SharedCamelInternalProcessor$1.process(SharedCamelInternalProcessor.java:89)
+	at org.apache.camel.impl.engine.DefaultAsyncProcessorAwaitManager.process(DefaultAsyncProcessorAwaitManager.java:82)
+	at org.apache.camel.impl.engine.SharedCamelInternalProcessor.process(SharedCamelInternalProcessor.java:86)
+	at org.apache.camel.support.cache.DefaultProducerCache.send(DefaultProducerCache.java:178)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.send(DefaultProducerTemplate.java:176)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.send(DefaultProducerTemplate.java:172)
+	at org.apache.camel.impl.engine.DefaultProducerTemplate.requestBody(DefaultProducerTemplate.java:413)
+	at com.n2nlab.camel.python.PythonN2NComponentTest.lambda$testScriptTimeout$0(PythonN2NComponentTest.java:92)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3111)
+	at com.n2nlab.camel.python.PythonN2NComponentTest.testScriptTimeout(PythonN2NComponentTest.java:91)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:48:03.461 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-8) is shutting down (timeout:10s)
+05:48:04.580 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (total:4)
+05:48:04.580 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route32 (direct://pythonTimeout)
+05:48:04.580 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route31 (direct://pythonList)
+05:48:04.580 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route30 (direct://pythonString)
+05:48:04.580 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route29 (direct://pythonTest)
+05:48:04.580 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-8) shutdown in 1s119ms (uptime:2s)
+05:48:04.580 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+05:48:04.580 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - Testing done: testScriptTimeout (com.n2nlab.camel.python.PythonN2NComponentTest)
+05:48:04.580 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - Took: 2s150ms (2150 millis)
+05:48:04.581 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+]]></system-out>
+  </testcase>
+  <testcase name="testListProcessing" classname="com.n2nlab.camel.python.PythonN2NComponentTest" time="1.829">
+    <system-out><![CDATA[05:48:04.597 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-9) is starting
+05:48:05.426 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (total:4)
+05:48:05.426 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route33 (direct://pythonTest)
+05:48:05.426 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route34 (direct://pythonString)
+05:48:05.426 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route35 (direct://pythonList)
+05:48:05.426 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route36 (direct://pythonTimeout)
+05:48:05.426 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-9) started in 829ms (build:0ms init:0ms start:829ms)
+05:48:05.438 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-10) is starting
+05:48:06.254 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes startup (total:4)
+05:48:06.254 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route37 (direct://pythonTest)
+05:48:06.254 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route38 (direct://pythonString)
+05:48:06.254 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route39 (direct://pythonList)
+05:48:06.254 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Started route40 (direct://pythonTimeout)
+05:48:06.254 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-10) started in 816ms (build:0ms init:0ms start:816ms)
+05:48:06.255 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+05:48:06.255 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - Testing: Should handle list processing (com.n2nlab.camel.python.PythonN2NComponentTest)
+05:48:06.255 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+05:48:06.409 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-10) is shutting down (timeout:10s)
+05:48:06.412 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Routes stopped (total:4)
+05:48:06.412 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route40 (direct://pythonTimeout)
+05:48:06.412 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route39 (direct://pythonList)
+05:48:06.412 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route38 (direct://pythonString)
+05:48:06.412 [main] INFO  o.a.c.i.engine.AbstractCamelContext -     Stopped route37 (direct://pythonTest)
+05:48:06.412 [main] INFO  o.a.c.i.engine.AbstractCamelContext - Apache Camel 4.8.0 (camel-10) shutdown in 2ms (uptime:0s)
+05:48:06.412 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+05:48:06.412 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - Testing done: testListProcessing (com.n2nlab.camel.python.PythonN2NComponentTest)
+05:48:06.413 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - Took: 157ms (157 millis)
+05:48:06.413 [main] INFO  o.a.c.t.junit5.util.ExtensionHelper - ********************************************************************************
+]]></system-out>
+  </testcase>
+</testsuite>
