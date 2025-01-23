@@ -15,10 +15,6 @@ import org.slf4j.LoggerFactory;
 import java.util.Base64;
 import java.nio.charset.StandardCharsets;
 
-/**
- * Ruby endpoint for executing Ruby scripts in Camel routes.
- * Supports both inline scripts and external script files.
- */
 @UriEndpoint(
         firstVersion = "1.0.0",
         scheme = "ruby",
@@ -33,6 +29,9 @@ public class RubyEndpoint extends DefaultEndpoint {
     @Metadata(required = true)
     private String scriptName;
 
+    @UriParam(description = "Script registry ID for complex scripts")
+    private String scriptId;
+
     @UriParam(description = "Inline Ruby script content")
     private String rubyScript;
 
@@ -43,7 +42,7 @@ public class RubyEndpoint extends DefaultEndpoint {
     private String scriptPath;
 
     @UriParam(defaultValue = "false",
-            description = "Whether to cache the compiled script (improves performance for repeated executions)")
+            description = "Whether to cache the compiled script")
     private boolean cacheScript = false;
 
     @UriParam(defaultValue = "true",
@@ -51,7 +50,7 @@ public class RubyEndpoint extends DefaultEndpoint {
     private boolean allowNullBody = true;
 
     @UriParam(defaultValue = "UTF-8",
-            description = "Character encoding when reading script files")
+            description = "Character encoding for scripts")
     private String encoding = "UTF-8";
 
     public RubyEndpoint(String uri, RubyComponent component) {
@@ -68,37 +67,61 @@ public class RubyEndpoint extends DefaultEndpoint {
         throw new RuntimeCamelException("Ruby endpoint doesn't support consumers");
     }
 
-    /**
-     * Gets the effective Ruby script by checking encoded, inline, or file-based scripts
-     */
+
+
     public String getEffectiveScript() {
+        if (scriptId != null) {
+            String registeredScript = RubyScriptRegistry.getScript(scriptId);
+            if (registeredScript == null) {
+                throw new RuntimeCamelException("No script found for ID: " + scriptId);
+            }
+            return registeredScript;
+        }
         if (encodedScript != null) {
             try {
-                return new String(Base64.getDecoder().decode(encodedScript), StandardCharsets.UTF_8);
+                LOG.debug("Attempting to decode Base64 script: {}", encodedScript);
+                String cleaned = encodedScript.trim().replaceAll("\\s+", "");
+                byte[] decoded = Base64.getDecoder().decode(cleaned);
+                return new String(decoded, StandardCharsets.UTF_8);
             } catch (IllegalArgumentException e) {
-                throw new RuntimeCamelException("Failed to decode Base64 script", e);
+                LOG.error("Failed to decode Base64 script: {}", encodedScript, e);
+                throw new RuntimeCamelException("Failed to decode Base64 script: " + e.getMessage(), e);
             }
         }
         return rubyScript;
     }
 
-    /**
-     * Validates the endpoint configuration before use.
-     */
     public void validateConfiguration() {
+        LOG.debug("Validating endpoint configuration...");
+        LOG.debug("scriptPath: {}", scriptPath);
+        LOG.debug("rubyScript: {}", rubyScript != null ? "present" : "null");
+        LOG.debug("encodedScript: {}", encodedScript != null ? "present" : "null");
+        LOG.debug("scriptId: {}", scriptId != null ? "present" : "null");
+
         int scriptSources = 0;
         if (rubyScript != null) scriptSources++;
         if (encodedScript != null) scriptSources++;
         if (scriptPath != null) scriptSources++;
+        if (scriptId != null) scriptSources++;
 
         if (scriptSources == 0) {
             throw new RuntimeCamelException(
-                    "One of 'rubyScript', 'encodedScript', or 'scriptPath' must be specified on " + getEndpointUri());
+                    "One of 'rubyScript', 'encodedScript', 'scriptPath', or 'scriptId' must be specified on " + getEndpointUri());
         }
         if (scriptSources > 1) {
             throw new RuntimeCamelException(
-                    "Only one of 'rubyScript', 'encodedScript', or 'scriptPath' can be specified on " + getEndpointUri());
+                    "Only one of 'rubyScript', 'encodedScript', 'scriptPath', or 'scriptId' can be specified on " + getEndpointUri());
         }
+        LOG.debug("Configuration validation successful");
+    }
+
+    // Add getter/setter for scriptId
+    public String getScriptId() {
+        return scriptId;
+    }
+
+    public void setScriptId(String scriptId) {
+        this.scriptId = scriptId;
     }
 
     // Getters and Setters
